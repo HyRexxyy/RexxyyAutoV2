@@ -1,14 +1,11 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Fami-dev/WindUI/releases/download/1.7.0.0/main.txt"))()
-if not WindUI then return end
 
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local player = Players.LocalPlayer
-if not player or not replicatedStorage then return end
 
 function gradient(text, startColor, endColor)
-    if not text or not startColor or not endColor then return "" end
     local result = ""
     local length = #text
     for i = 1, length do
